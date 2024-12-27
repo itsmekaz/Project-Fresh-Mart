@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/basic.css">
+    <link rel="stylesheet" href="assets/styles/order.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+
+        <main class="container-content">
+            <section class="title grid">
+                <a href="history.html"><img src="assets/images/icons/arrow-right-2.svg" alt=""></a>
+                <span></span>
+                <a href=""><img src="assets/images/icons/gps.svg" alt=""></a>
+            </section>
+
+            <!-- OTW -->
+            <section class="otw"></section>
+
+            <!-- PROGRESS -->
+            <section class="progress">
+                <img src="assets/images/Scroll-Down.svg" alt="">
+                <div class="time grid">
+                    <h1 class="hb-7">10 menit lagi</h1>
+                    <h2 class="br-1"><span style="color: var(--ne30);">Delivery to</span> Jalan Gatramas Raya, Kembaran</h2>
+                </div>
+                <img id="process-icon" src="assets/images/icons/process.svg" alt="">
+                <div class="status">
+                    <div class="icon"></div>
+                    <div class="text">
+                        <p class="bm-1">Pesananmu dalam perjalanan</p>
+                        <p class="cr-1">Kami akan mengantarnya secepat mungkin.</p>
+                    </div>
+                </div>
+                <div class="kurir">
+                    <div class="kurir-profile">
+                        <div class="pict-kurir"></div>
+                        <div class="name">
+                            <p class="bb-1">Joko Abraham</p>
+                            <p class="br-2">Kurir Pribadi</p>
+                        </div>
+                    </div>
+                    <div class="act">
+                        <span class="chat"><img src="assets/images/icons/chat.svg" alt=""></span>
+                        <span class="telp"><img src="assets/images/icons/telp.svg" alt=""></span>
+                    </div>
+                </div>
+                <img src="assets/images/Home-Indicator-black.svg" alt="">
+            </section>
+        </main>
+    </div>
+    
+
+    <script>
+        setTimeout(() => {
+            const processIcon = document.getElementById('process-icon');
+            processIcon.src = "assets/images/icons/process-done.svg";
+    
+            setTimeout(() => {
+                window.location.href = "rating.html";
+            }, 900);
+        }, 5000);
+    </script>
+</body>
+</html>

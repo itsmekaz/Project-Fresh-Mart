@@ -1,0 +1,118 @@
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+/* pict */
+main .pict {
+    width: 488px;
+    height: 437px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+main .pict .profile {
+    background-image: url('../images/profile-pict.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 110px;
+    height: 99px;
+    position: relative;
+    top: -250px;
+    left: 165px;
+    z-index: 10;
+}   
+
+main .pict .profile img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+main .pict .text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    position: absolute;
+    top: 230px;
+    left: 150px;
+}
+
+h1, p {
+    margin: 0;
+}
+
+main .pict .text .member {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+
+/* account */
+main .account {
+    position: absolute;
+    z-index: 9999;
+    top: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main .account h2 {
+    text-align: center;
+    padding-inline: 30px;
+    margin: 0;
+}
+
+main .account .info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main .account .info .field {
+    display: flex;
+    gap: 12px;
+    width: 430px;
+    padding-inline: 60px;
+}
+
+main .account .info .field img {
+    width: 38.224px;
+    height: 38.224px;
+}
+
+main .account .info .field .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2;
+}
+
+main .account .info .field .text p:last-child {
+    color: var(--ne30);
+}
+
+
+/* logout */
+main button.logout {
+    position: absolute;
+    bottom: 130px;
+    left: 130px;
+    color: var(--Neutral-Neutral00, #F5F5F5);
+    text-align: center;
+    width: 165.951px;
+    padding: 10.537px 25px;
+    border-radius: 14.049px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--ne60);
+    box-shadow: 0px 3.512px 3.512px 0px rgba(255, 255, 255, 0.25) inset, 1.756px 6.146px 3.424px 0px rgba(0, 0, 0, 0.25), -3.512px -4.39px 3.512px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+main button.logout:active {
+    box-shadow: none;
+}

@@ -1,0 +1,102 @@
+/* logo */
+main .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+main .logo img:last-child {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+main .logo img:last-child:hover {
+    filter: brightness(0.8);
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+main h1 {
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.42);
+    margin-top: 34px;
+    margin-bottom: 35px;
+}
+
+main .text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+main .text p:first-child {
+    color: rgba(0, 0, 0, 0.60);
+}
+
+main .text h2 {
+    color: var(--ne60);
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.42);
+}
+
+main .text p:last-child {
+    text-align: justify;
+    text-shadow: 0px 2px 1.4px rgba(0, 0, 0, 0.25);
+    margin-top: 2px;
+}
+
+main .ornamen {
+    background-image: url('../images/bg-beforestarted.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 1080px;
+    position: relative;
+}
+
+main .ornamen h1 {
+    position: absolute;
+    top: 320px;
+    color: var(--ne00);
+    padding-left: 44px;
+    padding-right: 45px;
+}
+
+main .ornamen .person-bored {
+    background-image: url('../images/person-bored.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 535px;
+    z-index: 80;
+    width: 344.65px;
+    height: 319.792px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+main .ornamen a {
+    color: var(--ne00);
+    position: absolute;
+    bottom: 80px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 307.399px;
+    height: 60.732px;
+    padding: 16.818px 0px;
+    border-radius: 14.949px;
+    background: rgba(255, 255, 255, 0.40);
+    box-shadow: 0px 3.737px 3.737px 0px rgba(255, 255, 255, 0.25) inset, 1.869px 6.54px 3.644px 0px rgba(0, 0, 0, 0.25), -3.737px -4.672px 3.737px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+main .ornamen a:hover {
+    background-color: var(--ne00);
+    color: var(--ne100);
+    cursor: pointer;
+}
+
+main .ornamen a:active {
+    box-shadow: none;
+}

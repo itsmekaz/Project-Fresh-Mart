@@ -1,0 +1,55 @@
+.container {
+    background-image: url('../images/bg-getstarted.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-color: var(--gr30);
+}
+
+.container img.home {
+    position: absolute;
+    bottom: 0;
+} 
+
+main {
+    padding-bottom: 30px;
+}
+
+main h1 {
+    margin: 0;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.42);
+    padding-left: 71px;
+    padding-right: 72px;
+    margin-top: 185px;
+}
+
+main .person-started {
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 73px;
+    margin-bottom: 65px;
+}
+
+main a {
+    color: var(--ne00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+    width: 307.399px;
+    height: 60.732px;
+    padding: 16.818px 0px;
+    border-radius: 14.949px;
+    background: var(--gr20);
+    box-shadow: 0px 3.737px 3.737px 0px rgba(255, 255, 255, 0.25) inset, 1.869px 6.54px 3.644px 0px rgba(0, 0, 0, 0.25), -3.737px -4.672px 3.737px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+main a:hover {
+    background-color: var(--gr40);
+}
+
+main a:active {
+    box-shadow: none;
+}

@@ -1,0 +1,123 @@
+.container {
+    background-color: #F4FFAC;
+    background-image: url('../images/bg-regist.svg');
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container img.home {
+    position: absolute;
+    bottom: 0;
+}
+
+main.container-content {
+    margin-block: 40px;
+    padding-bottom: 40px;
+    margin-inline: auto;
+}
+
+/* salut */
+main .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+main .title img {
+    cursor: pointer;
+}
+
+input {
+    width: 312px;
+    height: 52px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0px -3px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border: none;
+    padding: 14px 28px;
+}
+
+button {
+    border: none; 
+    cursor: pointer; 
+    width: 200px;
+    height: 47px;
+    text-align: center;
+    padding: 14px 28px;
+    border-radius: 16px;
+    background-color: #DDDA27;
+    box-shadow: var(--D3);
+    margin-top: 18px;
+    margin-bottom: 10px;
+    margin-inline: auto;
+    color: var(--ne60);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+.container-content h2 {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 190px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.form-group label {
+    color: rgba(0, 0, 0, 0.65);
+    padding-left: 14px;
+}
+
+ /* Teks Register */
+main .register {
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 15px;
+}
+
+.register-button {
+    width: 70px;
+    height: 29px;
+    border-radius: 50px;
+    background: var(--yell00);
+    color: var(--ne100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 4px 3.9px 0px rgba(0, 0, 0, 0.25), -4px -5px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+p {
+    margin: 0;
+}
+
+.register-button:hover {
+    background-color: var(--yell20);
+    color: var(--ne60);
+}
+
+.register-button:active {
+    box-shadow: none;
+}

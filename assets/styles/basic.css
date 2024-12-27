@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(../fonts/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+    /* color */
+    --gr00: #A8F6B8;
+    --gr10: #7DF194;
+    --gr20: #51ED71;
+    --gr30: #26E84D;
+    --gr40: #1EBA3E;
+    --gr50: #178B2E;
+    --gr60: #0F5D1F;
+    --yell00: #F4FFAC;
+    --yell10: #EEFF83;
+    --yell20: #E9FF59;
+    --yell30: #E3FF30;
+    --yell40: #B6CC26;
+    --yell50: #88991D;
+    --yell60: #5B6613;
+    --ne00: #F5F5F5;
+    --ne10: #D9D9D9; 
+    --ne20: #BFBFBF; 
+    --ne30: #808080; 
+    --ne40: #404040; 
+    --ne50: #262626;
+    --ne60: #0D0D0D;
+    --gradient-1: linear-gradient(180deg, #26E84D 0%, #E3FF30 100%); 
+    --gradient-2: linear-gradient(254deg, #E1FF30 -0.26%, #B9FA36 31.39%, #5FEF44 66.61%, #27E84D 86.6%);
+    --gradient-3: linear-gradient(111deg, #098522 0%, #BAEA2B 93.57%);
+    --state-red: #FF0000;
+    --state-orange: #FFD700; 
+
+    /* box shadow */
+    --xm: 0px -1px 1px 0px rgba(0, 0, 0, 0.25);
+    --sm: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+    --md: 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    --D3: 0px 4px 4px 0px rgba(255, 255, 255, 0.25) inset, 2px 7px 3.9px 0px rgba(0, 0, 0, 0.25), -4px -5px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+  
+.container::-webkit-scrollbar {
+    width: 0;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* warna scrollbar */
+    border-radius: 25px; /* membuat ujungnya bulat */
+}
+  
+.container::-webkit-scrollbar-thumb:hover {
+    background-color: transparent; /* warna saat hover */
+}
+  
+
+* {
+    font-family: 'Outfit';
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+.grid {
+    padding-inline: 30px;
+}
+
+.container {
+    width: 430px;
+    height: 932px;
+    margin-inline: auto;
+    border-radius: 25px;
+    border: 2px solid silver;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+    background-color: white;
+    position: relative;
+}
+
+.container-content {
+    width: 430px;
+    height: auto;
+    margin-inline: auto;
+    overflow: hidden;
+}
+  
+/* status bar */
+header {
+    background-image: url('../images/Status-Bar.svg');
+    width: 430px;
+    height: 59.084px;
+    margin-inline: auto;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: transparent;
+}
+
+/* navbar */
+footer {
+    background-color: var(--gr50);
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: var(--D3);
+    position: sticky;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+footer nav {
+    display: flex;
+    margin: 0;
+    padding: 20px 10px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+/* text */
+.db-1, .db-2, .hb-1, .hb-2, .hb-3, .hb-4, .hb-5, .hb-6, .hb-7, .hb-8, .bb-1, .bb-2, .cb-1, .cb-2 { 
+    font-weight: 700; /* bold */
+}
+
+.dm-1, .dm-2, .hm-1, .hm-2, .hm-3, .hm-4, .hm-5, .hm-6, .hm-7, .hm-8, .bm-1, .bm-2, .cm-1, .cm-2, .price-sale, .price-sale-kg { 
+    font-weight: 500; /* medium */
+}
+
+.dr-1, .dr-2, .hr-1, .hr-2, .hr-3, .hr-4, .hr-5, .hr-6, .hr-7, .hr-8, .br-1, .br-2, .cr-1, .cr-2 {
+    font-weight: 400; /* regular*/
+}
+
+.dl-1, .dl-2, .hl-1, .hl-2, .hl-3, .hl-4, .hl-5, .hl-6, .hl-7, .hl-8, .bl-1, .bl-2, .cl-1, .cl-2 {
+    font-weight: 300; /* light */
+}
+
+.db-1, .dm-1, .dr-1, .dl-1 {
+    font-size: 76px;
+    line-height: 120%;
+    letter-spacing: 0.38px;
+}
+
+.db-2, .dm-2, .dr-2, .dl-2 {
+    font-size: 60px;
+    line-height: 120%;
+    letter-spacing: 0.3px;
+}
+
+.hb-1, .hm-1, .hr-1, .hl-1 {
+    font-size: 52px;
+    line-height: 130%;
+    letter-spacing: 0.26px;
+}
+
+.hb-2, .hm-2, .hr-2, .hl-2 {
+    font-size: 42px;
+    line-height: 130%;
+    letter-spacing: 0.21px;
+}  
+
+.hb-3, .hm-3, .hr-3, .hl-3 {
+    font-size: 38px;
+    line-height: 130%;
+    letter-spacing: 0.19px;
+} 
+
+.hb-4, .hm-4, .hr-4, .hl-4 {
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0.16px;
+}
+
+.hb-5, .hm-5, .hr-5, .hl-5 {
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0.13px;
+}
+
+.hb-6, .hm-6, .hr-6, .hl-6 {
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.12px;
+} 
+
+.hb-7, .hm-7, .hr-7, .hl-7 {
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+}
+
+.hb-8, .hm-8, .hr-8, .hl-8 {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0.09px;
+}
+
+.bb-1, .bm-1, .br-1, .bl-1 {
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.128px;
+}
+
+.bb-2, .bm-2, .br-2, .bl-2 {
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.112px;
+} 
+
+.cb-1, .cm-1, .cr-1, .cl-1 {
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: -0.096px;
+}
+
+.cb-2, .cm-2, .cr-2, .cl-2 {
+    font-size: 11px;
+    line-height: 140%;
+    letter-spacing: -0.088px;
+}
+
+.price-sale {
+    font-size: 8px;
+    letter-spacing: -0.064px;
+    color: var(--gr60);
+}
+
+.price-sale-kg {
+    font-size: 6px;
+    letter-spacing: -0.064px;
+    color: var(--ne30);
+}

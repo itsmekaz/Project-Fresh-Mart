@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/styles/basic.css">
+  <link rel="stylesheet" href="assets/styles/login.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <main class="container-content">
+            <h2 class="hb-5">LOGIN</h2>
+            <section class="form">
+                <div class="form-group">
+                    <label for="email" class="bm-2">Email</label>
+                    <input type="email" id="email" name="email" class="br-2" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="bm-2">Password</label>
+                    <input type="password" id="password" name="password" class="br-2" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="login-button bb-2" id="login">LOGIN</button>
+            </section>
+            <section class="forgot-password">
+                <a href="forgotPass.html" class="bm-1">Forgot Your Password?</a>
+            </section>
+            <section class="divider bm-1">Or Sign In With</section>
+            <section class="social-icons-container">
+                <a href="https://accounts.google.com/v3/signin/identifier?hl=id&ifkv=ATuJsjxtOBeZDuRmB7aXp-t7SKJXmJLQ0gwLtISqhsxIyjcD8f26SWZ9gxRQXTnexAOh2jbXHugR&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1628295783%3A1709606966038322&theme=mn" target="_blank">
+                    <img src="assets/images/google.svg" alt="Google">
+                </a>              
+                <a href="https://x.com/i/flow/login" target="_blank">
+                    <img src="assets/images/twitter.svg" alt="Twitter">
+                </a>   
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="assets/images/facebook.svg" alt="Facebook">
+                </a>   
+            </section>
+            
+            <section class="register">
+                <p class="bm-1">Don't have an account?</p>
+                <a href="register.html" class="register-button bm-1">Register</a>
+            </section>
+        </main>
+
+        <img src="assets/images/Home-Indicator-black.svg" alt="" class="home">
+    </div>
+
+
+    <script>
+        const login = document.getElementById('login');
+        login.addEventListener('click', function() {
+            window.location.href = "homepage.html";
+        });
+    </script>
+</body>
+</html>

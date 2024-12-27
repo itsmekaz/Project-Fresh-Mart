@@ -1,0 +1,106 @@
+.container {
+    background-color: var(--gr30);
+}
+
+/* home indicator */
+.container img.home {
+    position: absolute;
+    bottom: 0;
+}
+
+main {
+    padding-bottom: 40px;
+}
+
+/* title */
+main .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--ne100);
+    padding: 0 25px;
+}
+
+main .title span {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+/* verify */
+main .verify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+/* text */
+main .text p {
+    padding-inline: 58px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+main .text span {
+    text-decoration: underline;
+}
+
+/* number */
+main .number {
+    display: flex;
+    gap: 25px;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+main .number input {
+    width: 50px;
+    height: 55px;
+    background-color: var(--ne10);
+    border: none;
+    border-bottom: 3px solid var(--state-red);
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    padding: 5px 0;
+    text-align: center;
+}
+
+main .number input:focus {
+    border-bottom: none;
+}
+
+/* resend button */
+main a.resend {
+    color: var(--ne100);
+    text-align: center;
+    display: block;
+    margin-top: 35px;
+    text-decoration-line: underline;
+}
+
+main a.resend:hover {
+    text-decoration-line: none;
+}
+
+/* verify button */
+main a.go-login {
+    border-radius: 16px;
+    background-color: #DDDA27;;
+    box-shadow: var(--D3);
+    width: 200px;
+    height: 47px;
+    padding: 12px 54px;
+    color: var(--ne100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 40px;
+}
+
+main a:active {
+    box-shadow: none;
+}

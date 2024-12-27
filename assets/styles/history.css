@@ -1,0 +1,77 @@
+.container {
+    background-color: #EEFFF1;
+}
+
+main {
+    margin-top: 40px;
+    padding-bottom: 550px;
+    background-color: white;
+}
+
+/* title */
+main .title {
+    display: flex;
+    align-items: center;
+    background-color: #EEFFF1;
+    padding-bottom: 18px;
+    gap: 2px;
+    border-bottom: 1px solid var(--ne10);
+}
+
+main .title h1 {
+    color: var(--gr40);
+    margin: 0;
+    padding-left: 0;
+}
+
+
+/* item */
+p {
+    margin: 0;
+}
+
+main .items .item {
+    background-color: white;
+    width: 430px;
+    padding: 13px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: var(--md);
+    gap: 20px;
+}
+
+main .items .item .semangka {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+main .items .item .semangka .img-left {
+    width: 89px;
+    height: 89px;
+    padding: 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 8px 13px 13px;
+    background-color: var(--ne00);
+    box-shadow: var(--md);
+}
+
+main .items .item .semangka .text {
+    display: flex;
+    flex-direction: column;
+}
+
+main .items .item .semangka .text p:last-child {
+    margin-top: 3px;
+}
+
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+}

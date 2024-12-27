@@ -1,0 +1,167 @@
+.container {
+    background-image: url('../images/maps.svg');
+    position: relative;
+    z-index: 99999;
+}
+
+.container-content {
+    height: 800px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+/* title */
+main .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gr40);
+    position: relative;
+    z-index: 90;
+}
+
+main .title span {
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+}
+
+main .title a {
+    transition: all 0.10s ease-in;
+}
+
+main .title a:hover {
+    filter: brightness(0.8);
+}
+
+
+/* otw */
+main .otw {
+    background-image: url('../images/track.svg');
+    width: 231px;
+    height: 158px;
+    position: absolute;
+    top: 280px;
+    left: 75px;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+/* progress */
+main .progress {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    height: 373.977px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .progress .time {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-bottom: 10px;
+}
+
+/* status */
+main .progress .status {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 371px;
+    padding: 8px 16px 8px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--ne10);
+    margin: 0 auto;
+}   
+
+main .progress .status .icon {
+    background-image: url('../images/icons/icon-history.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 56px;
+    height: 56px;
+    padding: 6px;
+    border-radius: 12px;
+    border: 1px solid var(--ne10);
+}
+
+main .progress .status .text {
+    display: flex;
+    width: 270px;
+    height: 61px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+main .progress .status .text p:last-child {
+    color: var(--ne30);
+}
+
+/* kurir */
+main .progress .kurir {
+    display: flex;
+    padding: 0px 30px 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    width: 430px;
+}
+
+main .progress .kurir .kurir-profile {
+    display: flex;
+    width: 179px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .progress .kurir .kurir-profile .pict-kurir {
+    background-image: url('../images/kurir-pict.svg');
+    width: 56px;
+    height: 56px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main .progress .kurir .kurir-profile .name {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+main .progress .kurir .kurir-profile .name p:last-child {
+    color: var(--ne30);
+}
+
+main .progress .kurir .act {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .progress .kurir .act span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 44px;
+    border-radius: 12px;
+    border: 1px solid var(--ne10);
+    transition: all 0.15s ease-in;
+    cursor: pointer;
+}
+
+main .progress .kurir .act span:hover {
+    filter: brightness(0.5);
+}

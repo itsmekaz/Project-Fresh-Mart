@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/basic.css">
+    <link rel="stylesheet" href="assets/styles/cart.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        
+        <main class="container-content">
+            <!-- SALUT -->
+            <section class="title">
+                <h1 class="hb-4 grid">My Cart</h1>
+                <div class="all grid">
+                    <div class="check-all">
+                        <input type="checkbox" id="all">
+                        <label for="all" class="hr-8"> Select all items</label>
+                    </div>
+                    <p class="hr-8">Delete</p>
+                </div>
+            </section>
+            
+            <section class="items">
+                <div class="item">
+                    <input type="checkbox" id="cabai">
+                    <label for="cabai">
+                        <div class="img-left">
+                            <img src="assets/images/sm-cabai.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="hr-8">Cabai Merah</p>
+                            <p class="bb-1">Rp30.000 <span class="bb-2">/kg</span></p>
+                        </div>
+                    </label>
+                    <div class="add">
+                        <img src="assets/images/icons/min-circle.svg" alt="">
+                        <p class="bm-2">1</p>
+                        <img src="assets/images/icons/plus-circle.svg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="semangka">
+                    <label for="semangka">
+                        <div class="img-left">
+                            <img src="assets/images/sm-semangka.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="hr-8">Semangka</p>
+                            <p class="bb-1">Rp15.000 <span class="bb-2">/kg</span></p>
+                        </div>
+                    </label>
+                    <div class="add">
+                        <img src="assets/images/icons/min-circle.svg" alt="">
+                        <p class="bm-2">2</p>
+                        <img src="assets/images/icons/plus-circle.svg" alt="">
+                    </div>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="brokoli">
+                    <label for="brokoli">
+                        <div class="img-left">
+                            <img src="assets/images/sm-brokoli.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="hr-8">Brokoli</p>
+                            <p class="bb-1">Rp28.000 <span class="bb-2">/kg</span></p>
+                        </div>
+                    </label>
+                    <div class="add">
+                        <img src="assets/images/icons/min-circle.svg" alt="">
+                        <p class="bm-2">1</p>
+                        <img src="assets/images/icons/plus-circle.svg" alt="">
+                    </div>
+                </div>
+                <!-- ADD MORE -->
+                <div class="add-more">
+                    <p class="hm-8">Add more items</p>
+                    <img src="assets/images/icons/cart-plus.svg" alt="">
+                </div>
+            </section>
+        </main>
+
+
+        <!-- Footer default -->
+        <footer id="footer-default">
+            <nav>
+                <a class="home" href="homepage.html"><img src="assets/images/icons/home.svg" alt=""></a>
+                <a class="search" href="search.html"><img src="assets/images/icons/search.svg" alt=""></a>
+                <a class="cart" href=""><img src="assets/images/icons/cart-click.svg" alt=""></a>
+                <a class="history" href="HISTORYafterORDER.html"><img src="assets/images/icons/history.svg" alt=""></a>
+                <a class="user" href="profile.html"><img src="assets/images/icons/user.svg" alt=""></a>
+            </nav>
+            <img src="assets/images/Home-Indicator.svg" alt="">
+        </footer>
+
+        <!-- Footer baru -->
+        <footer id="footer-new" style="display: none;">
+            <div class="checkout">
+                <button type="button" class="hb-7" id="checkout">Checkout</button>
+            </div>
+            <img src="assets/images/Home-Indicator-black.svg" alt="">
+        </footer>
+    </div>
+
+
+    <script>
+        const footerDefault = document.getElementById('footer-default');
+        const footerNew = document.getElementById('footer-new');
+        const checkboxes = document.querySelectorAll('.items input[type="checkbox"]');
+    
+        function updateFooter() {
+            const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+            if (isChecked) {
+                footerDefault.style.display = 'none';
+                footerNew.style.display = 'flex';
+            } else {
+                footerDefault.style.display = 'block';
+                footerNew.style.display = 'none';
+            }
+        }
+        
+        const selectAllCheckbox = document.getElementById('all');
+        function toggleAllCheckboxes(isChecked) {
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = isChecked;
+            });
+            updateFooter();
+        }
+
+        selectAllCheckbox.addEventListener('change', function () {
+            toggleAllCheckboxes(this.checked);
+        });
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', function () {
+                const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+                selectAllCheckbox.checked = allChecked;
+                updateFooter();
+            });
+        });
+        
+
+        const checkout = document.getElementById('checkout');
+        checkout.addEventListener('click', function() {
+            window.location.href = "checkout.html";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.container {
+    background-color: white;
+}
+
+.container img.home {
+    position: absolute;
+    bottom: 0;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+main {
+    margin-top: 40px;
+    padding-bottom: 50px;
+    margin-inline: auto;
+}
+
+main img.yeay {
+    margin: 0 auto;
+    display: block;
+}
+
+main .rating {
+    display: flex;
+    width: 430px;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+main .rating .rat {
+    display: flex;
+    padding-block: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .rating .rat img {
+    cursor: pointer;
+}
+
+main .rating textarea {
+    width: 370px;
+    height: 75px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: var(--ne00);
+    border: none;
+    margin-inline: auto;
+    margin-top: 10px;
+}
+
+main a.done {
+    display: flex;
+    width: 189px;
+    padding: 12px 67px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: var(--gr50);
+    box-shadow: var(--D3);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+main a.done:active {
+    box-shadow: none;
+}

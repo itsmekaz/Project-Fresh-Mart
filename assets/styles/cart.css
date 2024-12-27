@@ -1,0 +1,219 @@
+.container {
+    background-color: #EEFFF1;
+}
+
+main {
+    margin-top: 40px;
+    padding-bottom: 120px;
+    background-color: white;
+}
+
+/* checkbox */
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--ne30);
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+}
+
+input[type="checkbox"]:checked::after {
+    content: url("../images/icons/checkbox-checked.svg"); 
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* cart */
+main .title {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEFFF1;
+}
+
+main .title h1 {
+    color: var(--gr40);
+    margin-top: 0;
+}
+
+main .title .all {
+    border-bottom: 1px solid var(--ne20);
+    border-top: 1px solid var(--ne20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: white;
+}
+
+main .title .all .check-all {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main .title .all .check-all label {
+    margin: 0;
+    line-height: 0;
+}
+
+main .title .all p {
+    color: var(--state-red);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+main .title .all p:hover {
+    filter: brightness(0.6);
+}
+
+/* item */
+main .items {
+    background-color: white;
+}
+
+main .items .item {
+    display: flex;
+    align-items: center;
+    padding: 23px 30px;
+    justify-content: space-between;
+    border-top: 1px solid var(--ne20);
+    border-bottom: 1px solid var(--ne20);
+}
+
+main .items .item label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+main .items .item label .img-left {
+    width: 89px;
+    height: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 6px;
+    border-radius: 8px 8px 13px 13px;
+    background-color: var(--ne00);
+    box-shadow: var(--md);
+}
+
+main .items .item label .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+main .items .item label .text p {
+    margin: 0;
+}
+
+main .items .item label .text p:last-child {
+    color: var(--gr60);
+}
+
+main .items .item label .text p:last-child span {
+    color: var(--ne30);
+}
+
+
+/* add */
+main .items .item .add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    padding: 5px 6px;
+    border-radius: 500px;
+    background-color: white;
+    box-shadow: var(--md);
+}
+
+main .items .item .add p {
+    line-height: 0;
+    margin: 0;
+}
+
+main .items .item .add img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+main .items .item .add img:hover {
+    filter: brightness(0.9);
+}
+
+
+/* add more */
+main .items .add-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--ne20);
+    cursor: pointer;
+}
+
+main .items .add-more p {
+    margin: 0;
+    line-height: 0;
+}
+
+main .items .add-more:hover {
+    background-color: var(--ne00);
+}
+
+
+/* footer */
+footer {
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+footer#footer-new {
+    background-color: white;
+    padding-top: 15px;
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: var(--xm);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .checkout {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .checkout button {
+    width: 100%;
+    padding: 16px 141px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--gr50);
+    box-shadow: var(--D3);
+    margin: 0;
+    color: var(--ne00);
+    text-align: center;
+    cursor: pointer;
+}
+
+footer .checkout button:active {
+    box-shadow: none;
+}

@@ -1,0 +1,258 @@
+.container {
+    background-color: var(--ne00);
+}
+
+/* title */
+main .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gr40);
+    padding: 0 25px;
+}
+
+main .title span {
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+}
+
+
+/* address */
+main .address {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-block: 20px;
+    gap: 11px;
+    border-bottom: 1px solid var(--ne20);
+    background-color: white;
+}
+
+h2, p {
+    margin: 0;
+}
+
+main .address .text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+main .address .text p {
+    margin: 0;
+}
+
+main .address .text p:last-child {
+    color: var(--ne30);
+}
+
+main .address p.telp {
+    margin: 0;
+}
+
+main .address .act {
+    display: flex;
+    gap: 8px;
+}
+
+main .address .act a {
+    display: flex;
+    align-items: center;
+    color: var(--ne50);
+    height: 26px;
+    padding: 6px 12px;
+    border-radius: 16px;
+    border: 1px solid var(--ne30);
+    background-color: white;
+    gap: 4px;
+    transition: all 0.10s ease-in;
+}
+
+main .address .act a:hover {
+    background-color: var(--gr40);
+}
+
+/* Detail */
+main .detail {
+    background-color: white;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+main .detail .order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .detail .order .desc {
+    display: flex;
+    width: 106px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .detail .order .desc h3, main .detail .order .desc p {
+    margin: 0;
+}
+
+main .detail .order .desc p {
+    color: var(--ne30);
+}
+
+main .detail .order .img-right {
+    width: 75px;
+    height: 75px;
+    padding: 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ne00);
+    box-shadow: var(--md);
+    border-radius: 8px 8px 13px 13px;
+}
+
+main .detail .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+main .detail .price p {
+    margin: 0;
+}
+
+
+/* promo */
+main .promo {
+    display: flex;
+    width: 301px;
+    height: 56px;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid var(--ne10);
+    background-color: white;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+main .promo .used {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+/* rincian */
+main .rincian {
+    display: flex;
+    padding-block: 15px;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    gap: 8px;
+}
+
+main .rincian .prices {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+main .rincian .harga {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .rincian .harga p:first-child {
+    color: var(--ne50);
+}
+
+main .rincian .harga .hemat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+main .rincian .harga .hemat p:first-child {
+    text-decoration: line-through;
+    color: var(--ne40);
+}
+
+
+/* footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding-top: 15px;
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: var(--xm);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 11px;
+}
+
+footer .order .payment {
+    display: flex;
+    padding-inline: 30px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+footer .order .payment .left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+footer .order .payment .left .method {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+footer .order .payment .left .method p:last-child span {
+    color: var(--gr60);
+}
+
+footer .order .payment img.arrow-down {
+    rotate: 90deg;
+    cursor: pointer;
+}
+
+footer .order button {
+    padding: 16px 141px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--gr50);
+    box-shadow: var(--D3);
+    margin: 0;
+    color: var(--ne00);
+    text-align: center;
+    cursor: pointer;
+}
+
+footer .order button:active {
+    box-shadow: none;
+}

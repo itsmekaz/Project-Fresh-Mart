@@ -1,0 +1,115 @@
+.container {
+    background-color: var(--gr30);
+}
+
+/* home indicator */
+.container img.home {
+    position: absolute;
+    bottom: 0;
+}
+
+main {
+    padding-bottom: 70px;
+}
+
+/* title */
+main .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--ne100);
+    padding: 0 25px;
+}
+
+main .title span {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+/* forgot */
+main .forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 312px;
+    height: 52px;
+    margin-top: 2px;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0px -3px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    border: none;
+    padding: 14px 28px;
+}
+
+button {
+    border: none; 
+    cursor: pointer; 
+    width: 200px;
+    height: 47px;
+    text-align: center;
+    padding: 14px 28px;
+    border-radius: 16px;
+    background-color: #DDDA27;
+    box-shadow: var(--D3);
+    margin-top: 35px;
+    margin-bottom: 10px;
+    margin-inline: auto;
+    color: var(--ne60);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+main .text p {
+    padding-inline: 58px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px ;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: rgba(0, 0, 0, 0.65);
+    padding-left: 14px;
+}
+
+
+/* tryanotherway */
+main .tryanotherway {
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    margin-top: 20px;
+}
+
+.tryanotherway a {
+    color: var(--ne100);
+    cursor: pointer;
+}
+
+.tryanotherway:hover {
+    color: var(--ne100);
+    text-decoration: underline;
+}

@@ -1,0 +1,64 @@
+.container {
+    background-color: var(--gr30);
+}
+
+/* home indicator */
+.container img.home {
+    position: absolute;
+    bottom: 0;
+}
+
+main {
+    padding-bottom: 40px;
+}
+
+/* title */
+main .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--ne100);
+    padding: 0 25px;
+}
+
+main .title span {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+/* yahoo */
+main .yahoo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+/* text */
+main .text p {
+    padding-inline: 58px;
+    text-align: center;
+}
+
+/* button */
+main a.go-login {
+    border-radius: 16px;
+    background-color: #DDDA27;;
+    box-shadow: var(--D3);
+    width: 200px;
+    height: 47px;
+    padding: 12px 54px;
+    color: var(--ne100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+main a:active {
+    box-shadow: none;
+}

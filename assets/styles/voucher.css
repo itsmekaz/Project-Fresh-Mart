@@ -1,0 +1,84 @@
+/* home indicator */
+.container .indicator img {
+    position: absolute;
+    bottom: 0;
+}
+
+.container {
+    background-color: var(--ne00);
+}
+
+/* title */
+main .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gr40);
+    padding: 0 25px;
+}
+
+main .title span {
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+}
+
+
+/* vouchers */
+main .vouchers {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* voucher */
+main .vouchers .voucher {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 430px;
+    background-color: white;
+    gap: 15px;
+}
+
+main .vouchers .voucher h2, main .vouchers .voucher h3 {
+    margin: 0;
+}
+
+main .vouchers .voucher .desc {
+    display: flex;
+    color: var(--ne40);
+    justify-content: space-between;
+
+}
+
+main .vouchers .voucher .desc .text {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    gap: 30px;
+    border-right: 2px dashed var(--ne20);
+}
+
+main .vouchers .voucher .desc .text p {
+    margin: 0;
+}
+
+main .vouchers .voucher .desc button {
+    padding: 6px 20px;
+    border-radius: 8px;
+    box-shadow: var(--D3);
+    background-color: var(--gr50);
+    text-align: center;
+    color: var(--ne00);
+    line-height: 0;
+    border: transparent;
+    cursor: pointer;
+}
+
+main .vouchers .voucher .desc button:active {
+    box-shadow: none;
+}

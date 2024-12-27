@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/basic.css">
+    <link rel="stylesheet" href="assets/styles/checkout.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+
+        <main class="container-content">
+            <section class="title">
+                <a href="cart.html"><img src="assets/images/icons/arrow-right-1.svg" alt=""></a>
+                <h1 class="hb-4">Checkout</h1>
+                <span></span>
+            </section>
+
+            <!-- CHECKOUT DETAIL -->
+            <section class="address grid">
+                <h2 class="hb-8">Deliver to</h2>
+                <span class="text">
+                    <p class="bm-2">Jalan Gatramas Raya, Kembaran</p>
+                    <p class="cr-1">Gg. Kenanga XV No. 10, Tegalmulya, Ledug</p>
+                </span>
+                <p class="telp bm-2">+62 851-5740-7771</p>
+                <div class="act">
+                    <a href="" class="cr-1"><img src="assets/images/icons/edit-dark.svg" alt="">Edit</a>
+                    <a href="" class="cr-1"><img src="assets/images/icons/notepad-dark.svg" alt="">Add Note</a>
+                </div>
+            </section>
+
+            <!-- DETAIL -->
+            <section class="detail grid">
+                <h2 class="hb-8">Detail Pesanan</h2>
+                <div class="order">
+                    <div class="desc">
+                        <h3 class="hr-8">Semangka</h3>
+                        <p class="bm-2">1kg</p>
+                    </div>
+                    <div class="img-right">
+                        <img src="assets/images/xs-semangka.svg" alt="">
+                    </div>
+                </div>
+                <div class="price">
+                    <p class="bm-2">Rp15.000</p>
+                    <p class="bm-2">x2</p>
+                </div>
+            </section>
+
+            <!-- VOUCHER PROMO -->
+            <section class="promo" id="voucher">
+                <span class="used">
+                    <img src="assets/images/icons/voucher.svg" alt="">
+                    <p class="bb-2">1 Voucher diterapkan</p>
+                </span>
+                <img src="assets/images/icons/arrow-right-outline.svg" alt="">
+            </section>
+
+            <!-- RINCIAN -->
+            <section class="rincian grid">
+                <h2 class="hb-8">Rincian Pembayaran</h2>
+                <div class="prices">
+                    <div class="harga">
+                        <p class="br-1">Harga</p>
+                        <p class="bm-1">Rp30.000</p>
+                    </div>
+                    <div class="harga">
+                        <p class="br-1">Pajak</p>
+                        <p class="bm-1">Rp3.300</p>
+                    </div>
+                    <div class="harga">
+                        <p class="br-1">Ongkir</p>
+                        <div class="hemat">
+                            <p class="br-1">Rp10.000</p>
+                            <p class="bm-1">Rp5.000</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="order">
+                <div class="payment">
+                    <div class="left">
+                        <img src="assets/images/icons/wallet-outline.svg" alt="">
+                        <div class="method">
+                            <p class="bb-1">Cash</p>
+                            <p class="bm-2">Total: <span>Rp38.300</span></p>
+                        </div>
+                    </div>
+                    <img src="assets/images/icons/arrow-right-outline.svg" alt="" class="arrow-down">
+                </div>
+                <button type="button" class="hb-7" id="order">Order Now</button>
+            </div>
+            <img src="assets/images/Home-Indicator-black.svg" alt="">
+        </footer>
+    </div>
+
+    <script>
+        const voucher = document.getElementById('voucher');
+        voucher.addEventListener('click', function() {
+            window.location.href = 'voucher.html';
+        });
+
+        const order = document.getElementById('order');
+        order.addEventListener('click', function() {
+            window.location.href = "order.html";
+        });
+    </script>
+</body>
+</html>

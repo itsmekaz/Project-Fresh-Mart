@@ -1,0 +1,8 @@
+PANDUAN CARA MENJALANKAN PROJECT FRESH MART
+
+- Disarankan untuk dibuka pada browser Mozilla Firefox
+- Atur ukuran browser kurang dari 80%
+- File pertama yang dijalankan adalah welcome.html
+
+
+C_2303040154_2303040172

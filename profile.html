@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/basic.css">
+    <link rel="stylesheet" href="assets/styles/profile.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+
+        <main class="container-content">
+            <section class="pict">
+                <img src="assets/images/union.svg" alt="">
+                <div class="profile">
+                    <img src="assets/images/edit-profile.svg" alt="">
+                </div>
+                <div class="text">
+                    <h1 class="hm-6">Flora Fauna</h1>
+                    <div class="member">
+                        <img src="assets/images/member.svg" alt="">
+                        <p class="bl-1">Member Silver</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="account">
+                <h2 class="hb-5">Account Info</h2>
+
+                <div class="info">
+                    <div class="field">
+                        <img src="assets/images/icons/profile.svg" alt="">
+                        <span class="text">
+                            <p class="bm-1">Nama</p>
+                            <p class="cl-1">Flora Fauna</p>
+                        </span>
+                    </div>
+                    <div class="field">
+                        <img src="assets/images/icons/mobile.svg" alt="">
+                        <span class="text">
+                            <p class="bm-1">Mobile</p>
+                            <p class="cl-1">+62 851-5740-7771</p>
+                        </span>
+                    </div>
+                    <div class="field">
+                        <img src="assets/images/icons/email-outline.svg" alt="">
+                        <span class="text">
+                            <p class="bm-1">Email</p>
+                            <p class="cl-1">User12345@gmail.com</p>
+                        </span>
+                    </div>
+                    <div class="field">
+                        <img src="assets/images/icons/address-marker.svg" alt="">
+                        <span class="text">
+                            <p class="bm-1">Address</p>
+                            <p class="cl-1">Jalan Gatramas Raya, Kembaran</p>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <button class="logout hb-8" id="logout">LOG OUT</button>
+        </main>
+
+        <footer>
+            <nav>
+                <a class="home" href="homepage.html"><img src="assets/images/icons/home.svg" alt=""></a>
+                <a class="search" href="search.html"><img src="assets/images/icons/search.svg" alt=""></a>
+                <a class="cart" href="cart.html"><img src="assets/images/icons/cart.svg" alt=""></a>
+                <a class="history" href="HISTORYafterORDER.html"><img src="assets/images/icons/history.svg" alt=""></a>
+                <a class="user" href=""><img src="assets/images/icons/user-click.svg" alt=""></a>
+            </nav>
+            <img src="assets/images/Home-Indicator.svg" alt="">
+        </footer>
+    </div>
+
+    <script>
+        const logout = document.getElementById('logout');
+        logout.addEventListener('click', function() {
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>

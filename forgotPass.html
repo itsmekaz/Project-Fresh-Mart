@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/styles/basic.css">
+  <link rel="stylesheet" href="assets/styles/forgotpass.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <main class="container-content">
+            <section class="title">
+                <a href="login.html"><img src="assets/images/icons/arrow-right-black.svg" alt=""></a>
+                <h1 class="hb-5">FORGOT PASSWORD</h1>
+                <span></span>
+            </section>
+            
+            <section class="forgot">
+                <img src="assets/images/forgot-pass.svg" alt="">
+            </section>
+
+            <section class="text">
+                <p class="hm-7">Please enter your email address to recieve a verification cord.</p>
+            </section>
+            <section class="form">
+                <div class="form-group">
+                    <label for="email" class="bm-2">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                
+                <button type="submit" class="send-button bb-2" id="send">SEND</button>
+            </section>
+            <section class="tryanotherway">
+                <a href="" class="bm-1">Try another way</a>
+            </section>
+        </main>
+
+        <img src="assets/images/Home-Indicator-black.svg" alt="" class="home">
+    </div>
+
+
+    <script>
+        const login = document.getElementById('send');
+        login.addEventListener('click', function() {
+            window.location.href = "verifyEmail.html";
+        });
+    </script>
+</body>
+</html>

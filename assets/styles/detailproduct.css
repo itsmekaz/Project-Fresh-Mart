@@ -1,0 +1,251 @@
+.container {
+    background-color: var(--ne00);
+    position: relative;
+    z-index: 99999;
+}
+
+.container-content {
+    height: 800px;
+}
+
+main {
+    margin-top: 30px;
+}
+
+/* title */
+main .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gr40);
+    position: relative;
+    z-index: 90;
+}
+
+main .title span {
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+}
+
+main .title a {
+    transition: all 0.10s ease-in;
+}
+
+main .title a:hover {
+    filter: brightness(0.8);
+}
+
+/* detail img */
+main .detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+
+main .detail .container-img {
+    height: 429px;
+    background-color: white;
+}
+
+main .detail .img-top {
+    height: 424px;
+    padding: 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 35px 35px;
+    background-color: var(--ne00);
+    box-shadow: var(--md);
+}
+
+/* detail h1 */
+main .detail .desc {
+    background-color: white;
+}
+
+main .detail .desc h1 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+main .detail .desc p {
+    color: var(--ne40);
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 2px;
+}
+
+main .detail .desc p span {
+    color: var(--gr60);
+    cursor: pointer;
+}
+
+main .detail .desc h2 {
+    color: var(--gr60);
+    padding-block: 10px;
+    margin: 0;
+}
+
+main .detail .desc h2 span {
+    color: var(--ne30);
+}
+
+/* detail variants */
+main .detail .desc .variants {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    gap: 15px;
+    align-items: center;
+    margin: 0;
+}
+
+main .detail .desc .variants label {
+    color: var(--ne40);
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1.5px solid var(--ne30);
+    background-color: white;
+    box-shadow: var(--sm);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main .detail .desc .variants input[type="radio"]:checked + label {
+    border: 1.5px solid var(--gr50);
+    background-color: var(--gr50);
+    color: var(--ne00);
+}
+
+
+/* review */
+main .detail .reviews {
+    background-color: white;
+    margin-top: 28px;
+}
+
+main .detail .reviews .title-review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+}
+
+main .detail .reviews .title-review h2 {
+    margin: 0;
+}
+
+main .detail .reviews .title-review a {
+    margin: 0;
+    color: var(--gr60);
+}
+
+main .detail .reviews .review {
+    display: flex;
+    padding: 0px 30px 15px 30px;
+    gap: 13px;
+    align-items: center;
+}
+
+/* card-review */
+main .detail .reviews .review .card {
+    min-width: 210px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: var(--md);
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+}
+
+main .detail .reviews .review .card .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 7px;
+}       
+
+main .detail .reviews .review .card .top h3 {
+    margin: 0;
+}
+
+main .detail .reviews .review .card .top .star {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+main .detail .reviews .review .card p {
+    margin: 0;
+    text-align: justify;
+}
+
+
+/* footer */
+footer {
+    background-color: white;
+    padding-top: 15px;
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: var(--xm);
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .payment {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .payment .add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    padding: 5px 6px;
+    border-radius: 500px;
+    background-color: white;
+    box-shadow: var(--md);
+}
+
+footer .payment .add p {
+    line-height: 0;
+    margin: 0;
+}
+
+footer .payment .add img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+footer .payment .add img:hover {
+    filter: brightness(0.9);
+}
+
+footer .payment button {
+    width: 230px;
+    padding: 12px 32px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--gr50);
+    box-shadow: var(--D3);
+    margin: 0;
+    color: var(--ne00);
+    cursor: pointer;
+}
+
+footer .payment button:active {
+    box-shadow: none;
+}

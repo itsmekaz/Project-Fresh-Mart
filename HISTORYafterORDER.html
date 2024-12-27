@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/styles/basic.css">
+    <link rel="stylesheet" href="assets/styles/history.css">
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        
+        <main class="container-content">
+            <!-- SALUT -->
+            <section class="title grid">
+                <img src="assets/images/icons/icon-history.svg" alt="">
+                <h1 class="hb-4 grid">Activity</h1>
+            </section>
+            
+            <section class="items">
+                <div class="item" id="semangka">
+                    <div class="semangka">
+                        <div class="img-left">
+                            <img src="assets/images/sm-semangka.svg" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="hr-8">Semangka</p>
+                            <p class="bm-2" style="color: var(--ne30);">1kg</p>
+                            <p class="cl-1">12 Nov 2024, 13.00</p>
+                        </div>
+                    </div>
+                    <p class="br-2">Total: Rp38.300</p>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <nav>
+                <a class="home" href="homepage.html"><img src="assets/images/icons/home.svg" alt=""></a>
+                <a class="search" href="search.html"><img src="assets/images/icons/search.svg" alt=""></a>
+                <a class="cart" href="cart.html"><img src="assets/images/icons/cart.svg" alt=""></a>
+                <a class="history" href=""><img src="assets/images/icons/history-click.svg" alt=""></a>
+                <a class="user" href="profile.html"><img src="assets/images/icons/user.svg" alt=""></a>
+            </nav>
+            <img src="assets/images/Home-Indicator.svg" alt="">
+        </footer>
+    </div>
+
+
+    <script>
+        const semangka = document.getElementById('semangka');
+        semangka.addEventListener('click', function() {
+            window.location.href = "rating.html";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+.container {
+    background-color: #EEFFF1;
+}
+
+main {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+}
+
+/* explore */
+main .title {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEFFF1;
+    padding-top: 5px;
+}
+
+main .title .explore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-bottom: 20px;
+}
+
+main .title .explore h1 {
+    color: var(--gr40);
+}
+
+main .title .explore img {
+    cursor: pointer;
+    width: 34px;
+    height: 34px;
+}
+
+main .title .address {
+    border-bottom: 1px solid var(--ne20);
+    border-top: 1px solid var(--ne20);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+}
+
+main .title .address .icon-map {
+    background-image: url('../images/icons/map-marker-1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    padding: 3px 6px 4.5px 6px;
+    cursor: pointer;
+}
+
+main .title .address p {
+    margin: 0;
+    color: var(--ne50);
+}
+
+main .title .address p span {
+    color: rgba(0, 0, 0, 0.50);
+}
+
+main .title .address .icon-edit {
+    background-image: url('../images/icons/edit.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}
+
+/* search */
+main .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 370px;
+    padding: 10px 25px;
+    background-color: var(--ne10);
+    border-radius: 35px;
+    margin-inline: auto;
+    margin-top: 20px;
+}
+
+main .search input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--ne60);
+    border: none;
+    background-color: transparent;
+}
+
+main .search input:focus {
+    outline: none;
+}
+
+main .search img {
+    cursor: pointer;
+}
+
+/* filter */
+main .filter {
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .filter .icon-filter {
+    background-image: url('../images/icons/filter.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: none;
+}
+
+main .filter a {
+    color: var(--ne40);
+    padding: 6px 15px;
+    border-radius: 100px;
+    border: 1px solid var(--ne30);
+    cursor: pointer;
+}
+
+
+/* catalog */
+main .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-inline: 27px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* product */
+main .catalog .product {
+    width: 180px;
+    height: 241px;
+    box-shadow: var(--sm);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+main .catalog .product .img-top {
+    width: 100%;
+    height: 153px;
+    padding: 0px 6px;
+    box-shadow: var(--sm);
+    background-color: var(--ne00);   
+    border-radius: 8px 8px 13px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main .catalog .product .img-top img.thing {
+    position: relative;
+    transition: all  0.13s ease-out;
+}
+
+main .catalog .product .img-top img.thing:hover {
+    scale: 1.12;
+}
+
+main .catalog .product .img-top .fav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--ne00);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin-right: 0 10px 20px 0;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 99;
+    transition: all  0.10s ease-out;
+}
+
+main .catalog .product .img-top .fav img {
+    width: 20px;
+    height: 20px;    
+}
+
+main .catalog .product .img-top .fav:hover img {
+    filter: brightness(0.8);
+}
+
+
+main .catalog .product .desc {
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 8px;
+}
+
+main .catalog .product .desc .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: end;
+    width: 128px;
+}
+
+main .catalog .product .desc .text .star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+main .catalog .product .desc .text .star p {
+    line-height: 0;
+    margin: 0;
+}
+
+main .catalog .product .desc .text h2 {
+    line-height: 0;
+    margin: 0;
+}
+
+main .catalog .product .desc .text h2:last-child {
+    color: var(--gr60);
+}
+
+main .catalog .product .desc .text h2 span {
+    color: var(--ne30);
+}
+
+main .catalog .product .desc .plus {
+    background-image: url('../images/icons/plus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+    background-color: var(--yell10);
+}
+
+main .catalog .product .desc .plus:hover {
+    background-color: var(--yell30);
+}
+
+
+/* product with sale */
+main .catalog .product .img-top .sale {
+    position: absolute;
+    top: -11px;
+    left: 0;
+    z-index: 90;
+    padding: 7px 10px;
+    text-align: center;
+    border-radius: 0px 0px 10px 0px;
+    background-color: var(--yell30);
+}
+
+main .catalog .product .desc .text p.price-sale {
+    margin: 0;
+    margin-top: -8px;
+    text-decoration-line: line-through;
+    margin-bottom: -20px;
+}

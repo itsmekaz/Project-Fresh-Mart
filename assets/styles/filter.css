@@ -1,0 +1,138 @@
+.container {
+    overflow: hidden;
+}
+
+.overlay {
+    background: rgba(13, 13, 13, 0.60);
+    height: 932px;
+    width: 431px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+}
+
+main {
+    height: 851px;
+    position: absolute;
+    background-color: white;
+    z-index: 10000;
+    bottom: 0;
+}
+
+main h1 {
+    margin-top: 5px;
+}
+
+/* filter */
+main .sort .sortby {
+    display: flex;
+    gap: 10px 7px;
+    flex-wrap: wrap;
+}
+
+main .sort .sortby a {
+    padding: 6px 15px;
+    border-radius: 500px;
+    border: 1px solid var(--ne30);
+    background: var(--ne00);
+    color: var(--ne40);
+}
+
+/* promo */
+main .promo h2, main .price h2 {
+    line-height: 0;
+    margin-top: 30px;
+}
+
+main .promo .promos, main .price .prices {
+    margin-top: 25px;
+}
+
+main .promo .promos .choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 30px;
+    border-bottom: 1px solid var(--ne20);
+}
+
+/* price */
+main .promo .promos, .price .prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.choice:first-child {
+    border-top: 1px solid var(--ne20);
+}
+
+main .price .prices .choice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 30px 11px 24px;
+    border-bottom: 1px solid var(--ne20);
+}
+
+main .price .prices .choice label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+/* button */
+main .button {
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .button button, main .button a {
+    width: 189px;
+    padding: 12px 67px;
+    align-items: center;
+    border-radius: 16px;
+    border: 2px solid var(--ne30);
+    cursor: pointer;
+}
+
+main .button a {
+    color: var(--ne30);
+    background-color: transparent;
+}
+
+main .button button {
+    color: var(--ne00);
+    background-color: var(--gr50);
+    box-shadow: var(--D3);
+    border: none;
+}
+
+main .button button:active {
+    box-shadow: none;
+}
+
+
+/* checkbox */
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--ne30);
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    appearance: none;
+}
+
+input[type="checkbox"]:checked::after {
+    content: url("../images/icons/checkbox-checked.svg"); 
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
